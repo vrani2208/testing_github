@@ -1,0 +1,4 @@
+%%writefile requirements.txt
+requests
+beautifulsoup4
+pandas
