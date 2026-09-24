@@ -7,13 +7,13 @@ the Titanic dataset.
 
 The dataset was loaded in `01_eda.ipynb`, cleaned, and saved as `titanic.csv`.
 
-Final cleaned dataset:
+### Final Cleaned Dataset
 
 - Rows: 889
 - Columns: 14
 
-The modeling notebook `02_modeling.ipynb` uses the cleaned `titanic.csv`
-as its input dataset.
+The modeling notebook `02_modeling.ipynb` uses the cleaned `titanic.csv` as
+its input dataset.
 
 ## Files
 
@@ -48,7 +48,7 @@ The following approaches were compared:
 - Class Weight Balanced
 - SMOTE
 
-SMOTE was applied only to the training data.
+SMOTE was applied only to the training data to avoid data leakage.
 
 ## Hyperparameter Tuning
 
@@ -70,10 +70,6 @@ The regression model was evaluated using:
 
 A residual plot was used to assess heteroscedasticity.
 
-## Final Model
-
-The final classification model was selected based on the classification
-evaluation metrics.
 ## EDA Interpretations
 
 ### Missing Values
@@ -152,6 +148,7 @@ approximately equal to 1.
 Classification and regression metrics are presented as separate groups because
 they evaluate different types of predictive tasks and are not directly
 comparable.
+
 ## Class Imbalance Analysis
 
 Three approaches were compared for handling class imbalance:
@@ -165,6 +162,12 @@ Three approaches were compared for handling class imbalance:
 The comparison shows how different imbalance-handling strategies affect
 precision, recall, and F1 score. SMOTE was applied only to the training data
 to avoid data leakage.
+
+## Final Model
+
+The final classification model selected for this project was Logistic
+Regression. The selection was based on the classification evaluation metrics
+documented in the model comparison and final recommendation sections.
 
 ## Final Recommendation
 
@@ -196,6 +199,3 @@ The Linear Regression model achieved:
 The residual plot showed that the residual variance was not constant across
 the range of predicted Fare values. This provides visual evidence of
 heteroscedasticity in the regression model.
-
-
-
